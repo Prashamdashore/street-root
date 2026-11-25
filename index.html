@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STREET ROOT | Modern Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Announcement -->
+
+    <div class="announcement">
+        FREE SHIPPING ON ORDERS ABOVE ₹1999
+    </div>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <h2 class="logo">STREET ROOT.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="searchToggle">⌕</button>
+            <button id="wishlistToggle">♡</button>
+            <button id="cartToggle">
+                Bag (<span id="cartCount">0</span>)
+            </button>
+        </div>
+
+    </header>
+
+    <!-- Search -->
+
+    <div class="search-area" id="searchArea">
+        <input type="text" id="searchInput" placeholder="Search your style...">
+    </div>
+
+    <!-- Hero -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p>NEW SEASON / 2026</p>
+
+            <h1>FASHION<br>WITHOUT<br>LIMITS.</h1>
+
+            <p>Find your style. Create your identity.</p>
+
+            <a href="#shop" class="primary-btn">
+                EXPLORE COLLECTION →
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories section" id="categories">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">EXPLORE OUR STYLE</p>
+                <h2>SHOP BY CATEGORY</h2>
+            </div>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700" alt="T-shirts">
+                <div>
+                    <h3>T-SHIRTS</h3>
+                    <button data-category="T-Shirt">SHOP NOW →</button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=700" alt="Hoodies">
+                <div>
+                    <h3>HOODIES</h3>
+                    <button data-category="Hoodie">SHOP NOW →</button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=700" alt="Jeans">
+                <div>
+                    <h3>JEANS</h3>
+                    <button data-category="Jeans">SHOP NOW →</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Products -->
+
+    <section class="section products-section" id="shop">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">OUR LATEST DROPS</p>
+                <h2>FEATURED PRODUCTS</h2>
+            </div>
+        </div>
+
+        <div class="filter-bar">
+
+            <button class="filter active" data-filter="All">
+                All
+            </button>
+
+            <button class="filter" data-filter="T-Shirt">
+                T-Shirts
+            </button>
+
+            <button class="filter" data-filter="Hoodie">
+                Hoodies
+            </button>
+
+            <button class="filter" data-filter="Jeans">
+                Jeans
+            </button>
+
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+    <!-- Promo -->
+
+    <section class="promo">
+
+        <div>
+            <p>STREET ROOT COLLECTION</p>
+            <h2>MAKE YOUR<br>OWN STATEMENT.</h2>
+            <a href="#shop">SHOP THE COLLECTION →</a>
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section class="about section" id="about">
+
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+
+        <h2>STYLE IS NOT ABOUT<br>FOLLOWING TRENDS.</h2>
+
+        <p>
+            STREET ROOT is about individuality,
+            confidence and everyday expression.
+            Wear what feels like you.
+        </p>
+
+    </section>
+
+    <!-- Newsletter -->
+
+    <section class="newsletter">
+
+        <h2>STAY IN THE LOOP.</h2>
+
+        <p>Get updates about new collections and launches.</p>
+
+        <form id="newsletterForm">
+
+            <input type="email" id="emailInput" placeholder="Enter your email" required>
+
+            <button type="submit">JOIN US →</button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h2>STREET ROOT.</h2>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+        </div>
+
+        <p>Wear Your Attitude.</p>
+
+        <p>© 2026 STREET ROOT. All rights reserved.</p>
+
+    </footer>
+    <!-- PRODUCT DETAILS MODAL -->
+
+    <div class="details-overlay" id="detailsOverlay">
+
+        <div class="details-box">
+
+            <button class="details-close" id="detailsClose">
+                &times;
+            </button>
+
+            <div class="details-layout">
+
+                <img id="detailImage" src="" alt="Product">
+
+                <div class="details-info">
+
+                    <p class="eyebrow">STREET ROOT COLLECTION</p>
+
+                    <h2 id="detailName">Product Name</h2>
+
+                    <h3 id="detailPrice">₹0</h3>
+
+                    <p id="detailDescription">
+                        Premium everyday streetwear.
+                    </p>
+
+                    <h4>Select Size</h4>
+
+                    <div class="size-options">
+                        <button class="size-btn" data-size="S">S</button>
+                        <button class="size-btn" data-size="M">M</button>
+                        <button class="size-btn" data-size="L">L</button>
+                        <button class="size-btn" data-size="XL">XL</button>
+                        <button class="size-btn" data-size="XXL">XXL</button>
+                    </div>
+
+                    <h4>Quantity</h4>
+
+                    <div class="detail-quantity">
+                        <button id="qtyMinus">−</button>
+                        <span id="detailQty">1</span>
+                        <button id="qtyPlus">+</button>
+                    </div>
+
+                    <button class="detail-add-btn" id="detailAddCart">
+                        ADD TO BAG
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Cart Drawer -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="drawer-header">
+            <h2>YOUR BAG</h2>
+            <button id="closeCart">✕</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <h3 id="cartTotal">Total: ₹0</h3>
+            <button id="checkoutBtn">CHECKOUT →</button>
+        </div>
+
+    </aside>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
